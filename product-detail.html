@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Website</title>
+  <title>Product Detail - E-Commerce Website</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
   <!-- Bootstrap core CSS -->
   <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
 </head>
 <body>
- <!-- Navigation Bar -->
+
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">E-Commerce</a>
@@ -26,44 +26,34 @@
             <a class="nav-link" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="cart.html">Cart</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- home section starts  -->
 
-<section class="home" id="home">
-
-  <div class="content mt-5 ms-5">
-      <h3>barkum spare parts and more</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
-      <a href="#" class="btn">Get yours now</a>
-  </div>
-
-</section>
-  <!-- about section starts  -->
-<section class="about" id="about" >
-  <h1 class="heading mt-5"> <span>about</span> us </h1>
-    <div class="row p-3">
-      <div class="image">
-          <img src="images/parts.png" alt="">
+  <!-- Product Detail -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/parts.png" class="img-fluid" alt="Product Image">
       </div>
-      <div class="content">
-          <h3>what makes our services special?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
-          <a href="#" class="btn">learn more</a>
+      <div class="col-md-6">
+        <h2>Product Name</h2>
+        <p class="lead"> N39.99  <del>N99.99</del></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor tincidunt, convallis metus at, vestibulum risus. Sed ultrices odio et nisl consequat hendrerit. Duis sed varius arcu.</p>
+        <form>
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity:</label>
+            <input type="number" class="form-control" id="quantity" value="1">
+          </div>
+          <button type="submit" class="btn btn-primary">Add to Cart</button>
+        </form>
       </div>
     </div>
-</section>
+  </div>
+
   <!-- Footer -->
   <footer class="bg-light text-center text-lg-start mt-5">
     <div class="text-center p-3">
@@ -71,7 +61,7 @@
     </div>
   </footer>
   <!-- scripts -->
-<!-- Bootstrap -->
+ <!-- Bootstrap -->
 <script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="assets/Bootstrap/js/bootstrap.min.js"></script> 
 </body>
